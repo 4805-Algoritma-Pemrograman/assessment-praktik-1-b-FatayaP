@@ -23,4 +23,3 @@ public class Nomor1{
     }  
     
 }
-
