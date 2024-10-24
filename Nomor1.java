@@ -19,5 +19,7 @@ public class Nomor1{
 
         System.out.println("Total penjualan salesman: " + totalPenjualan);
         System.out.println("Komisi yang didapatkan = " + komisi);
+        
     }
+    
 }
