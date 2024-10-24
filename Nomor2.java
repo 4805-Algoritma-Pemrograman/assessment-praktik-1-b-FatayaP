@@ -51,5 +51,6 @@ public class Nomor2{
 
         System.out.println("Jumlah transaksi penyewaan bungalow = " + jumlahTransaksi);
         System.out.println("Total pendapatan = " + totalPendapatan);
+        
     }
 }
