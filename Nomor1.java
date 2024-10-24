@@ -1,5 +1,3 @@
-
-
 public class Nomor1{
     public static void main(String[] args){
       Scanner input = new Scanner(System.in);
@@ -19,7 +17,5 @@ public class Nomor1{
 
         System.out.println("Total penjualan salesman: " + totalPenjualan);
         System.out.println("Komisi yang didapatkan = " + komisi);
-        
-    }
-    
+    }   
 }
