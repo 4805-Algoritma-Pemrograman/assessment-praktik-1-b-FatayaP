@@ -6,15 +6,11 @@ public class Nomor2{
 
         int jumlahTransaksi = 0;
         double totalPendapatan = 0;
-
-        String ulang = "Y"; 
-
-        do {
-            System.out.print("Masukkan kode bungalow [1/2/3]: ");
-            int kode = input.nextInt();
-
-            System.out.print("Lama menginap (malam): ");
-            int lamaMenginap = input.nextInt();
+        
+        int numInputs = input.nextInt(); 
+        for (int i = 0; i < numInputs; i++) {
+            int kode = input.nextInt(); 
+            int lamaMenginap = input.nextInt(); 
 
             double tarifPerMalam = 0;
             double persenPelayanan = 0;
@@ -43,14 +39,10 @@ public class Nomor2{
 
             totalPendapatan += totalBiaya;
             jumlahTransaksi++;
+        }
 
-            System.out.print("Input lagi (Y/N)? ");
-            ulang = input.next();
-
-        } while (ulang.equalsIgnoreCase("Y"));
-
-        System.out.println("Jumlah transaksi penyewaan bungalow = " + jumlahTransaksi);
-        System.out.println("Total pendapatan = " + totalPendapatan);
+        System.out.println(jumlahTransaksi);
+        System.out.printf("%.1f\n", totalPendapatan);
         
     }
 }
